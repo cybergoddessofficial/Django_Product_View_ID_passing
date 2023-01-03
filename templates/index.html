@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Welcome</h1>
+
+	{% for i in data %}
+
+
+	<a href="{% url 'shop' product_id=i.id %}">{{i.name}}</a>
+
+	{% endfor %}
+	
+
+</body>
+</html>
